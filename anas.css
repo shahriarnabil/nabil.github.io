@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+header{
+    background-color: yellowgreen;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    display:flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+
+.menu ul li a{
+    text-decoration:none;
+ 
+    text-transform: uppercase;
+    
+    padding-left: 10px;
+    color:white;
+    cursor: pointer;
+ 
+  
+
+}
+
+.logo{
+    text-transform: uppercase;
+    color: white;
+}
+.icon ul{
+    display:flex;
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.icon ul li a{
+    text-decoration:none;
+    font-size: 20px;
+
+    padding-right: 10px;
+    color: white;
+    transition: all 1s;
+}
+.icon ul li a:hover{
+    color:rgb(32, 253, 2);
+    font-size: 32px;
+}
+.main{
+    display: flex;
+}
+.sidebar{
+   /* flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 22vw; */
+   flex: 0 0 18vw;
+   background-color:rgb(240, 197, 118);
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li{
+    padding: 5px;
+    border-bottom: 1px solid yellowgreen;
+}
+.sidebar ul li a{
+    text-decoration:none;
+    display: block;
+
+}
+.sidebar img{
+    width:100%;
+   
+}
+article{
+    padding:10px;
+}
+article h2{
+   
+
+    text-transform: capitalize;
+}
+.service-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+   
+    
+}
+.service{
+    border: 1px solid #eee;
+    flex-basis: 32%;
+    padding: 10px;
+  display: flex;
+
+  flex-direction: column;
+}
+.service-box img{
+    width: 100%;
+}
+.service h2{
+    margin: 5px 0px 10px;
+
+}
+.service p{
+    margin: 0px 0px 10px;
+}
+.read{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.read a{
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    padding: 8px 13px;
+    text-transform: capitalize;
+    display: block;
+   
+ 
+   
+}
+.read a:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+footer{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: yellowgreen;
+    padding: 15px 0px;
+}
+@media screen and (max-width:860px) {
+    .service{
+        flex-basis: 48%;
+    }
+
+    .sidebar{
+        flex:0 0 30vw;
+    }
+    
+}
+@media screen and (max-width:570px){
+ header{
+     flex-direction: column;
+ }
+ .logo{
+     order: -1;
+ }
+ article{
+
+    order: -1;
+    flex-direction: column;
+  
+ }
+ .main{
+     flex-direction: column;
+ }
+ .service{
+     flex-basis: 97%;
+ }
+ .sidebar ul li{
+     border: 1px solid yellowgreen;
+     border-radius: 20px;
+     text-align: center;
+ }
+
+}
